@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jsx-requirejs-plugin</artifactId>
-    <version>0.5.3-SNAPSHOT</version>
+    <version>0.5.2-1-SNAPSHOT</version>
     <name>jsx-requirejs-plugin</name>
     <description>WebJar for jsx-requirejs-plugin</description>
     <url>http://webjars.org</url>
@@ -24,7 +24,10 @@
         <requirejs>
             {
                 "paths": {
-                    "jsx-requirejs-plugin": "js/main"
+                    "jsx": "js/jsx"
+                },
+                "shim": {
+                    "jsx": ["requirejs-text"]
                 }
             }
         </requirejs>
