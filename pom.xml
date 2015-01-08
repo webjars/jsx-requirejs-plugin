@@ -27,7 +27,7 @@
                     "jsx": "js/jsx"
                 },
                 "shim": {
-                    "jsx": ["requirejs-text"]
+                    "jsx": ["text"]
                 }
             }
         </requirejs>
