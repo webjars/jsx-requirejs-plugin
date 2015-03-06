@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jsx-requirejs-plugin</artifactId>
-    <version>0.5.2</version>
+    <version>0.5.3-SNAPSHOT</version>
     <name>jsx-requirejs-plugin</name>
     <description>WebJar for jsx-requirejs-plugin</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/jsx-requirejs-plugin</url>
         <connection>scm:git:https://github.com/webjars/jsx-requirejs-plugin.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jsx-requirejs-plugin.git</developerConnection>
-        <tag>jsx-requirejs-plugin-0.5.2</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <dependencies>
