@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jsx-requirejs-plugin</artifactId>
-    <version>0.5.2-SNAPSHOT</version>
+    <version>0.5.2</version>
     <name>jsx-requirejs-plugin</name>
     <description>WebJar for jsx-requirejs-plugin</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/jsx-requirejs-plugin</url>
         <connection>scm:git:https://github.com/webjars/jsx-requirejs-plugin.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jsx-requirejs-plugin.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jsx-requirejs-plugin-0.5.2</tag>
     </scm>
     
     <dependencies>
@@ -73,13 +73,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}" />
                                 </move>
                             </target>
                         </configuration>
